@@ -1,0 +1,17 @@
+<?php
+//Боевая
+$url = 'https://xxx.xx/xxx';
+$request_report = 'https://xxx.xx/xxx';
+
+//Тестовая
+//$url = 'https://xxx.xx/xxx';
+//$request_report = 'https://xxx.xx/xxx';
+
+//Для ОСАГО
+$url_osago = 'https://xxx.xx/xxx';
+
+//SID
+$sid = "xxx";
+
+//Токен базовой аутентификации
+$base_auth = 'xxx';
