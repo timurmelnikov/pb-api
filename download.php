@@ -14,7 +14,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_SSLKEY, dirname(__FILE__) . "/security/key.pem");
 curl_setopt($curl, CURLOPT_SSLCERT, dirname(__FILE__) . "/security/19dec_cert.pem");
-curl_setopt($curl, CURLOPT_KEYPASSWD, $sid);
+curl_setopt($curl, CURLOPT_KEYPASSWD, $curl_password);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json',
     'Accept: application/json',
@@ -51,7 +51,7 @@ function download($extension, $tiket, $url, $claim_id)
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_SSLKEY, dirname(__FILE__) . "/security/key.pem");
     curl_setopt($curl, CURLOPT_SSLCERT, dirname(__FILE__) . "/security/19dec_cert.pem");
-    curl_setopt($curl, CURLOPT_KEYPASSWD, $sid);
+    curl_setopt($curl, CURLOPT_KEYPASSWD, $curl_password);
     $data = curl_exec($curl);
     curl_close($curl);
     $file_name = $tiket . '.' . $extension;

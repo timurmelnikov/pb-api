@@ -2,13 +2,13 @@
 
 $claim_id = 'Z181APB7000002';
 
-//$base_path = 'download/';
-$base_path = '\\\\filestore-5\\loss_doc_privat\\';
+$base_path = 'download/';
+//$base_path = '\\\\filestore-5\\loss_doc_privat\\';
 
 require_once('security/settings.php');
 $curl = curl_init();
 
-curl_setopt($curl, CURLOPT_URL, $request_report);
+curl_setopt($curl, CURLOPT_URL, $url_request_report);
 curl_setopt($curl, CURLOPT_POST, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
@@ -16,7 +16,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_SSLKEY, dirname(__FILE__) . "/security/key.pem");
 curl_setopt($curl, CURLOPT_SSLCERT, dirname(__FILE__) . "/security/19dec_cert.pem");
-curl_setopt($curl, CURLOPT_KEYPASSWD, $sid);
+curl_setopt($curl, CURLOPT_KEYPASSWD, $curl_password);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json',
     'Accept: application/json',
@@ -58,18 +58,18 @@ if ($data['requestReport']['status'] == 2) {
     }
 
     foreach ($data['report'] as $item) {
-        download($item['extension'], $item['tiket'], $item['url'], $claim_id, $base_path, $sid);
+        download($item['extension'], $item['tiket'], $item['url'], $claim_id, $base_path, $curl_password);
     }
 }
-function download($extension, $tiket, $url, $claim_id, $base_path, $sid)
+function download($extension, $tiket, $url_request_report, $claim_id, $base_path, $curl_password)
 {
     ini_set('max_execution_time', 300);
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_URL, $url_request_report);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_SSLKEY, dirname(__FILE__) . "/security/key.pem");
     curl_setopt($curl, CURLOPT_SSLCERT, dirname(__FILE__) . "/security/19dec_cert.pem");
-    curl_setopt($curl, CURLOPT_KEYPASSWD, $sid);
+    curl_setopt($curl, CURLOPT_KEYPASSWD, $curl_password);
     $data = curl_exec($curl);
     curl_close($curl);
     $file_name = $tiket . '.' . $extension;
