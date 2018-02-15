@@ -1,9 +1,9 @@
 <?php
 
-$claim_id = 'Z181APB7000002';
+$claim_id = 'Z181EPB7000003';
 
-$base_path = 'download/';
-//$base_path = '\\\\filestore-5\\loss_doc_privat\\';
+//$base_path = 'download/';
+$base_path = '\\\\filestore-5\\loss_doc_privat\\';
 
 require_once('security/settings.php');
 $curl = curl_init();

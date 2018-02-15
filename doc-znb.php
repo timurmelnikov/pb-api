@@ -20,7 +20,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 ));
 
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
-    "date": "2018-01-08",    
+    "date": "2018-02-13",    
     "tlCode": "HI",        
     "ircId": "VU",
     "reportCode": "DR"
@@ -30,5 +30,6 @@ $data = curl_exec($curl);
 curl_close($curl);
 
 echo '<pre>';
-print_r(json_decode($data, true));
+//print_r(json_decode($data, true));
+echo $data;
 echo '</pre>';
