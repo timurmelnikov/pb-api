@@ -19,7 +19,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 ));
 
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
-    "date": "2018-02-21",
+    "date": "2018-02-22",
     "tlCode": "NBR",        
     "ircId": "VU",
     "reportCode": "AR"
