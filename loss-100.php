@@ -28,13 +28,13 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "waitInfo",
     "request": {
-        "req_ID": "Z181LPB70000BF"
+        "req_ID": "Z1811PB7000042"
     },
     "actionLst": [
         {
             "ria_Type": "b",
-            "ria_Comment": "Нужна выписка с истории болезни",
-	        "ria_DatE": "2018-02-27T23:59:59.000"
+            "ria_Comment": "1) довідку з метеослужби; 2) кошторис на відновлення майна, калькуляцію збитків.",
+	        "ria_DatE": "2018-03-03T23:59:59.000"
         }
     ]
 }');
