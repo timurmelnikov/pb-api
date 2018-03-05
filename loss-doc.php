@@ -1,11 +1,11 @@
 <?php
 
-$claim_id = 'Z1821PB700009H';
+$claim_id = 'Z1824PB700000Y';
 
 //$base_path = 'download/';
 $base_path = '\\\\filestore-5\\loss_doc_privat\\';
 
-require_once('security/settings.php');
+require_once 'security/settings.php';
 $curl = curl_init();
 
 curl_setopt($curl, CURLOPT_URL, $url_request_report);
@@ -33,7 +33,7 @@ curl_close($curl);
 
 $data = json_decode($data, true);
 
-echo $base_path.$claim_id;
+echo $base_path . $claim_id;
 echo '<hr/>';
 echo '<pre>';
 print_r($data);
@@ -47,9 +47,6 @@ echo '</pre>';
 //     }
 //  $i++;
 // } while (($data['requestReport']['status'] != 2) && ($i < 5));
-
-
-
 
 if ($data['requestReport']['status'] == 2) {
 
@@ -72,6 +69,15 @@ function download($extension, $tiket, $url_request_report, $claim_id, $base_path
     curl_setopt($curl, CURLOPT_KEYPASSWD, $curl_password);
     $data = curl_exec($curl);
     curl_close($curl);
-    $file_name = $tiket . '.' . $extension;
-    if(!file_exists($base_path . $claim_id . '/' . $file_name))  file_put_contents($base_path . $claim_id . '/' . $file_name, $data);
+
+    if (trim($extension == '')) {
+        $file_name = $tiket;
+    } else {
+        $file_name = $tiket . '.' . $extension;
+    }
+
+    if (!file_exists($base_path . $claim_id . '/' . $file_name)) {
+        file_put_contents($base_path . $claim_id . '/' . $file_name, $data);
+    }
+
 }
