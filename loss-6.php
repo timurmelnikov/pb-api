@@ -30,7 +30,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "confirm",
     "request": {
-        "req_ID": "Z181FPB7000036"
+        "req_ID": "Z181LPB70000BF"
     }
 }');
 
