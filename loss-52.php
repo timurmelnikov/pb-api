@@ -33,8 +33,8 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "actionLst": [
         {
             "ria_Type": "k",
-            "ria_Comment": "Семенюк Елена Александровна +380672231169",
-	        "ria_DatE": "2018-03-02T00:00:00.000"
+            "ria_Comment": "Кудько Николай Витальевич +380676274424",
+	        "ria_DatE": "2018-03-15T00:00:00.000"
         }
     ]
 }');
