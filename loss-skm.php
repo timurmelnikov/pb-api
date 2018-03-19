@@ -21,7 +21,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 //за 26.12.2017 проверил 
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "date": "2018-03-18",   
-    "tlCode": "HI",        
+    "tlCode": "SKM",        
     "ircId": "VU",
     "reportCode": "AR"
 }');
