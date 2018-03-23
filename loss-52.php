@@ -28,7 +28,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "setUsIdHandle",
     "request": {
-        "req_ID": "Z182MPB70000BN"
+        "req_ID": "Z182NPB70000B8"
     },
     "actionLst": [
         {
