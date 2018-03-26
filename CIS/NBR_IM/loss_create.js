@@ -1,19 +1,19 @@
 var xhr = new XMLHttpRequest();
 
-var idAcc = "Z182NPB70000B8";                              /* Из АПИ Привата - idAcc */
+var idAcc = "Z182NPB700004A";                              /* Из АПИ Привата - idAcc */
 
 var data = JSON.stringify(
 {"LossDocumentID":-1,   									/* ИД Документа убытка в КИС. При первом создании пустое, при обновлении передавать полученный ИД убытка.*/
 "ClaimDate":"23.03.2018 01:01:01",							/* Из АПИ Привата - dateReg */
-"InsEventDate":"19.03.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
-"ClaimPerson":"Андрієвская Ірина Олександрівна",			/* Из АПИ Привата - [fio]*/				
-"ClaimerPhone":"+380663399089",								/* Из АПИ Привата - phoneClient */
-"InsuranceEventPlace":"Вдома",  							/* Из АПИ Привата - locationEvent */
+"InsEventDate":"16.03.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
+"ClaimPerson":"Цимбаліст Семен Семен",			/* Из АПИ Привата - [fio]*/				
+"ClaimerPhone":"+380686874558",								/* Из АПИ Привата - phoneClient */
+"InsuranceEventPlace":"м. Киев",  							/* Из АПИ Привата - locationEvent */
 "LossInsuranceEvent":4,										/* Характер - Прочие */
 "InjuredObjType":2,											/* Тип - Другое имущество (NBR) = 3. Для ЗНБ передавать (IM HI) 2 - Особа (життя/здров`я) */
-"EventDescrDisp":"госпитализация в больницу. Телефон клиента:+380663399089",				/* Из АПИ Привата - descriptionEvent */
+"EventDescrDisp":"послеинфарктная стенохардия. Телефон клієнта:+380671152015",				/* Из АПИ Привата - descriptionEvent */
 "Department":6158,											/* Го-дбс-сп */
-"InsuranceNumDoc": "DNH0HI-17BM3EG", 						/* Из АПИ Привата - ref */
+"InsuranceNumDoc": "DNH0HI-182742F", 						/* Из АПИ Привата - ref */
 "ExtId": idAcc,   								            /* Из АПИ Привата - idAcc */
 "ExtDoc":"\\\\filestore-5\\loss_doc_privat\\"+idAcc, 	    /* Ссылка на документы убытка */
 "ExtStatusDeal": 92, 										/* Из АПИ Привата - statusDeal */

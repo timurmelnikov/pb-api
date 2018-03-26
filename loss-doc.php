@@ -1,6 +1,6 @@
 <?php
 
-$claim_id = 'Z182NPB70000B8';
+$claim_id = 'Z181QPB70000EM';
 
 //$base_path = 'download/';
 $base_path = '\\\\filestore-5\\loss_doc_privat\\';
