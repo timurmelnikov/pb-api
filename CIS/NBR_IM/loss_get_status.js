@@ -1,7 +1,7 @@
 // По ИД убытка ПРивата
 
 var xhr = new XMLHttpRequest();
-var params = 'ext_id=Z182EPB70000D1';
+var params = 'ext_id=Z182QPB7000050';
 xhr.open("POST", 'cis/utils/get_ext_status', true);
 
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8'); 
