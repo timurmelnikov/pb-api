@@ -28,13 +28,13 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "setUsIdHandle",
     "request": {
-        "req_ID": "Z1832PB70000FM"
+        "req_ID": "Z1835PB700005G"
     },
     "actionLst": [
         {
             "ria_Type": "k",
-            "ria_Comment": "Семенюк Елена Александровна +380672231169",
-	        "ria_DatE": "2018-04-03T00:00:00.000"
+            "ria_Comment": "Кудько Николай Витальевич +380676274424",
+	        "ria_DatE": "2018-04-05T00:00:00.000"
         }
     ]
 }');

@@ -1,19 +1,19 @@
 var xhr = new XMLHttpRequest();
 
-var idAcc = "Z1832PB70000FM";                              /* Из АПИ Привата - idAcc */
+var idAcc = "Z1835PB700005G";                              /* Из АПИ Привата - idAcc */
 
 var data = JSON.stringify(
 {"LossDocumentID":-1,   									/* ИД Документа убытка в КИС. При первом создании пустое, при обновлении передавать полученный ИД убытка.*/
-"ClaimDate":"02.04.2018 01:01:01",							/* Из АПИ Привата - dateReg */
-"InsEventDate":"25.03.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
-"ClaimPerson":"Головаченко Дмитро Юрійович",			    /* Из АПИ Привата - [fio]*/				
-"ClaimerPhone":"+380965136164",								/* Из АПИ Привата - phoneClient */
-"InsuranceEventPlace":"Київ, вул. Російська 82А",  			/* Из АПИ Привата - locationEvent */
+"ClaimDate":"05.04.2018 01:01:01",							/* Из АПИ Привата - dateReg */
+"InsEventDate":"04.04.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
+"ClaimPerson":"Лінь Михайло Миколайович",			    /* Из АПИ Привата - [fio]*/				
+"ClaimerPhone":"+380634899124",								/* Из АПИ Привата - phoneClient */
+"InsuranceEventPlace":"г.Київ",  			/* Из АПИ Привата - locationEvent */
 "LossInsuranceEvent":4,										/* (не меняется) Характер - Прочие */
-"InjuredObjType":2, 	/* (зависит от вида страхования!!!) (NBR) = 3 / (HI) = 2 */
-"EventDescrDisp":"Вночі відчув ріжучу біль в районі мочового міхура. Через годину відчув гостру тягнучу біль в районі правої нирки. Телефон клієнта:+380965136164",				/* Из АПИ Привата - descriptionEvent */
+"InjuredObjType":3, 	/* (зависит от вида страхования!!!) (NBR) = 3 / (HI) = 2 */
+"EventDescrDisp":"Прорвало трубу. Телефон клієнта:+380634899124",				/* Из АПИ Привата - descriptionEvent */
 "Department":6158,											/* (не меняется) Го-дбс-сп */
-"InsuranceNumDoc": "DNH0HI-182J4N2", 						/* Из АПИ Привата - ref */
+"InsuranceNumDoc": "K2I4NBR-180F1V1", 						/* Из АПИ Привата - ref */
 "ExtId": idAcc,   								            /* Из АПИ Привата - idAcc */
 "ExtDoc":"\\\\filestore-5\\loss_doc_privat\\"+idAcc, 	    /* Ссылка на документы убытка */
 "ExtStatusDeal": 92, 										/* Из АПИ Привата - statusDeal */
