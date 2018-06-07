@@ -1,14 +1,12 @@
 <?php
 
 /*
-Выполнена. Выплата
-Статус присваивается после получения информации о выплате страхового возмещения
-
-???
+Отправлена(в работе ДС)
+Статус присваивается заявкам которые должны быть обработаны Страховой компанией 
+"ria_Type": "k"
 */
 
 require_once('security/settings.php');
-
 
 $curl = curl_init();
 
@@ -28,10 +26,17 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 ));
 
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
-    "opCode": "confirm",
+    "opCode": "setUsIdHandle",
     "request": {
-        "req_ID": "Z183JPB70000DN"
-    }
+        "req_ID": "Z1842PB70000C4"
+    },
+    "actionLst": [
+        {
+            "ria_Type": "k",
+            "ria_Comment": "Семенюк Елена Александровна +380672231169",
+	        "ria_DatE": "2018-05-14T00:00:00.000"
+        }
+    ]
 }');
 
 set_time_limit(300);
@@ -44,10 +49,7 @@ echo '<pre>';
 print_r($data);
 echo '</pre>';
 
-
-/*
-Z1819PB700007Y
-
-Z181FPB7000036
-
-*/
+/**
+ Страхование здоровья (HI): Семенюк Елена Александровна +380672231169
+ Недвижимость без осмотра (NBR и SKM): Кудько Николай Витальевич +380676274424
+ */

@@ -1,6 +1,7 @@
 <?php
 
 require_once('security/settings.php');
+
 $curl = curl_init();
 
 curl_setopt($curl, CURLOPT_URL, $url_request_report);
@@ -18,17 +19,17 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
     'sid: Pa9tees9hequooQu5ahpo',
 ));
 
-//за 26.12.2017 проверил 
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
-    "date": "2018-05-22",   
-    "tlCode": "HI",        
-    "ircId": "VU",
-    "reportCode": "AR"
+    "date":"2018-06-01",
+    "ircId":"VU",
+    "tlCode":"ZKF",
+    "reportCode":"DR"
 }');
 
 $data = curl_exec($curl);
 curl_close($curl);
 
 echo '<pre>';
-print_r(json_decode($data, true));
+//print_r(json_decode($data, true));
+echo $data;
 echo '</pre>';
