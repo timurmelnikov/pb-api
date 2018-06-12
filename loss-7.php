@@ -29,7 +29,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "refuse",
     "request": {
-        "req_ID": "Z1858PB70000A4"
+        "req_ID": "Z185CPB700005G"
     }
 }');
 
