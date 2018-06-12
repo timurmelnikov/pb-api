@@ -1,6 +1,8 @@
 <?php
+set_time_limit(5000000);
 
 $claim_id = 'Z1855PB70000EJ';
+
 
 //$base_path = 'download/';
 $base_path = '\\\\filestore-5\\loss_doc_privat\\';

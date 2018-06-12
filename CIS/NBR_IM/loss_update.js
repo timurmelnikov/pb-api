@@ -1,9 +1,9 @@
 var xhr = new XMLHttpRequest();
 var data = JSON.stringify(
 {
-"LossDocumentID":883716,   								/* При обновлении передавать полученный ИД КИС убытка */
+"LossDocumentID":883045,   								/* При обновлении передавать полученный ИД КИС убытка */
 "IdDocState": 1, 											/* ИД статуса убытка в КИС. Создаем и Обновляем всегда в статусе 1 - Сбор документов */
-"IdTypeNews": 69	/*ВАЖНО!!!! NBR - 68, HI - 69*/
+"IdTypeNews": 68	/*ВАЖНО!!!! NBR - 68, HI - 69*/
 });
 xhr.open("POST", 'cis/addlossdocument', true);
 xhr.onreadystatechange = function () { if (xhr.readyState == 4 && xhr.status == 200) { alert(xhr.responseText); } }

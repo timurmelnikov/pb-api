@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 /*
 Отправлена(в работе ДС)
@@ -28,13 +29,13 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "setUsIdHandle",
     "request": {
-        "req_ID": "Z1855PB70000EJ"
+        "req_ID": "Z1852PB700003C"
     },
     "actionLst": [
         {
             "ria_Type": "k",
-            "ria_Comment": "Семенюк Елена Александровна +380672231169",
-	        "ria_DatE": "2018-06-07T00:00:00.000"
+            "ria_Comment": "Кудько Николай Витальевич +380676274424",
+	        "ria_DatE": "2018-06-12T00:00:00.000"
         }
     ]
 }');

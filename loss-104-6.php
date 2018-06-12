@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 /*
 Согласование. Выплата.
@@ -26,11 +27,11 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "auth",
     "request": {
-        "req_ID": "Z183JPB70000DN"
+        "req_ID": "Z1855PB70000EJ"
     },
     "desision": {
         "repayment": {
-            "ira_Sum": "3672.53"
+            "ira_Sum": "5000"
         },
         "diseaseLst": [
             {

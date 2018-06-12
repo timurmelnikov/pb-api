@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 /*
 Ожидание сведений
@@ -28,13 +29,13 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "waitInfo",
     "request": {
-        "req_ID": "Z1856PB70000BW"
+        "req_ID": "Z185APB700003Y"
     },
     "actionLst": [
         {
              "ria_Type": "b",
             "ria_Comment": "Нужна выписка из истории болезни (амбулаторной карты форма 027/о)",
-	        "ria_DatE": "2018-07-07T23:59:59.000"
+	        "ria_DatE": "2018-07-11T23:59:59.000"
         }
     ]
 }');

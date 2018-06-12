@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 /*
 Выполнена. Отказ
@@ -28,7 +29,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "refuse",
     "request": {
-        "req_ID": "Z184VPB70000C3"
+        "req_ID": "Z1858PB70000A4"
     }
 }');
 

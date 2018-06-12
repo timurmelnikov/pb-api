@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 /*
 Согласование. Отказ.
@@ -26,7 +27,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "auth",
     "request": {
-        "req_ID": "Z184VPB70000C3"
+        "req_ID": "Z1858PB70000A4"
     },
     "desision": {
      "declineLst": [

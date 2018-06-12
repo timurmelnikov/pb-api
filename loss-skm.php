@@ -1,4 +1,5 @@
 <?php
+set_time_limit(5000000);
 
 require_once('security/settings.php');
 $curl = curl_init();
