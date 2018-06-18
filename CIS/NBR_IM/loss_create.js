@@ -1,16 +1,16 @@
 var xhr = new XMLHttpRequest();
 
-var idAcc = "Z1856PB700008Y";                              /* Из АПИ Привата - idAcc */
+var idAcc = "Z185EPB70000EU";                              /* Из АПИ Привата - idAcc */
 
 var data = JSON.stringify(
 {"LossDocumentID":-1,   									/* ИД Документа убытка в КИС. При первом создании пустое, при обновлении передавать полученный ИД убытка.*/
-"ClaimDate":"06.06.2018 01:01:01",							/* Из АПИ Привата - dateReg */
-"InsEventDate":"05.06.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
-"InsuranceEventPlace":"В помещении дома",  			/* Из АПИ Привата - locationEvent */
-"EventDescrDisp":"Дома поднялась температура.",				/* Из АПИ Привата - descriptionEvent */
-"ClaimerPhone":"+380933627223",								/* Из АПИ Привата - phoneClient */
-"InsuranceNumDoc": "KGC3HI-183P3AZ", 						/* Из АПИ Привата - ref */
-"ClaimPerson":"Скороход Світлана Геннадіївна",			    /* Из АПИ Привата - [fio]*/				
+"ClaimDate":"14.06.2018 01:01:01",							/* Из АПИ Привата - dateReg */
+"InsEventDate":"13.06.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
+"InsuranceEventPlace":"г. Ромны",  			/* Из АПИ Привата - locationEvent */
+"EventDescrDisp":"Простатит",				/* Из АПИ Привата - descriptionEvent */
+"ClaimerPhone":"",								/* Из АПИ Привата - phoneClient */
+"InsuranceNumDoc": "SUR3HI-184B1WN", 						/* Из АПИ Привата - ref */
+"ClaimPerson":"Шарандін Дмитро Андрійович",			    /* Из АПИ Привата - [fio]*/				
 "InjuredObjType":2, 	/*ВАЖНО!!!! NBR = 3, HI и SKM = 2*/
 
 "Department":6158,											/* (не меняется) Го-дбс-сп */

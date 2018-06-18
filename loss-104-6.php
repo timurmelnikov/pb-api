@@ -27,11 +27,11 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "auth",
     "request": {
-        "req_ID": "Z1851PB700007U"
+        "req_ID": "Z185CPB70000KH"
     },
     "desision": {
         "repayment": {
-            "ira_Sum": "30000"
+            "ira_Sum": "5000"
         },
         "diseaseLst": [
             {

@@ -2,9 +2,9 @@
 set_time_limit(5000000);
 
 /*
-Выполнена. Отказ
-Статус присваивается после получения информации об отказе в выплате страхового возмещения
-"opCode": "refuse",
+Ожидание сведений
+Статус присваивается при ожидание от клиентов информации для возможности принятия решения
+"ria_Type": "b",
 */
 
 require_once('security/settings.php');
@@ -30,7 +30,19 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "refuse",
     "request": {
         "req_ID": "Z1856PB70000BX"
-    }
+    },
+    "actionLst": [
+        {
+            "ria_Type": "r",
+            "ria_Comment": "18.06.18 12:23 0964241151",
+	        "ria_DatE": "2018-06-18T00:00:00.000"
+        },
+        {
+            "ria_Type": "w",
+            "ria_Comment": "их. №  887828  від    18.06.2018  р.",
+	        "ria_DatE": "2018-06-18T00:00:00.000"
+        }
+    ]
 }');
 
 set_time_limit(300);
@@ -42,3 +54,10 @@ echo '<pre>';
 //print_r(json_decode($data, true));
 print_r($data);
 echo '</pre>';
+
+/*
+Соответствия полей
+ "req_ID" = ID Заявки Привата
+ "ria_DatE" = поле ответа КИС - "date_sub": "2018-03-25",
+ "ria_Comment" = поле ответа КИС - "event_comments": "Текст ответа..." (апострафы экранировать \')
+ */

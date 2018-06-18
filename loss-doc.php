@@ -1,7 +1,7 @@
 <?php
 set_time_limit(5000000);
 
-$claim_id = 'Z185BPB70000DJ';
+$claim_id = 'Z185EPB70000EU';
 
 
 //$base_path = 'download/';

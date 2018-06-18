@@ -27,15 +27,15 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "auth",
     "request": {
-        "req_ID": "Z185CPB700005G"
+        "req_ID": "Z1856PB70000BX"
     },
     "desision": {
      "declineLst": [
             {
-                "ira_DE_FDESC": "Рішення прийнято."
+                "ira_DE_FDESC": "Прийнято рішення про відмову."
             },
             {
-                "ira_DE_FDESC": "Рішення прийнято."
+                "ira_DE_FDESC": "Прийнято рішення про відмову."
             }
 
         ]
