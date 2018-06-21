@@ -29,13 +29,13 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "setUsIdHandle",
     "request": {
-        "req_ID": "Z1858PB700004O"
+        "req_ID": "Z185LPB700006N"
     },
     "actionLst": [
         {
             "ria_Type": "k",
             "ria_Comment": "Семенюк Елена Александровна +380672231169",
-	        "ria_DatE": "2018-06-18T00:00:00.000"
+	        "ria_DatE": "2018-06-21T00:00:00.000"
         }
     ]
 }');

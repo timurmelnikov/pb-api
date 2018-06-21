@@ -27,7 +27,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "auth",
     "request": {
-        "req_ID": "Z1856PB70000BX"
+        "req_ID": "Z185IPB70000D8"
     },
     "desision": {
      "declineLst": [

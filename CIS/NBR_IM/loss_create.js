@@ -1,16 +1,16 @@
 var xhr = new XMLHttpRequest();
 
-var idAcc = "Z185EPB70000EU";                              /* Из АПИ Привата - idAcc */
+var idAcc = "Z185LPB700006N";                              /* Из АПИ Привата - idAcc */
 
 var data = JSON.stringify(
 {"LossDocumentID":-1,   									/* ИД Документа убытка в КИС. При первом создании пустое, при обновлении передавать полученный ИД убытка.*/
-"ClaimDate":"14.06.2018 01:01:01",							/* Из АПИ Привата - dateReg */
-"InsEventDate":"13.06.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
-"InsuranceEventPlace":"г. Ромны",  			/* Из АПИ Привата - locationEvent */
-"EventDescrDisp":"Простатит",				/* Из АПИ Привата - descriptionEvent */
-"ClaimerPhone":"",								/* Из АПИ Привата - phoneClient */
-"InsuranceNumDoc": "SUR3HI-184B1WN", 						/* Из АПИ Привата - ref */
-"ClaimPerson":"Шарандін Дмитро Андрійович",			    /* Из АПИ Привата - [fio]*/				
+"ClaimDate":"21.06.2018 01:01:01",							/* Из АПИ Привата - dateReg */
+"InsEventDate":"20.06.2018 01:01:01",						/* Из АПИ Привата - dateEvent */
+"InsuranceEventPlace":"Чернівці",  			/* Из АПИ Привата - locationEvent */
+"EventDescrDisp":"При плановій провірці були виявлені захворювання яєчників та була проведена операція. Телефон клієнта:+380660369907",				/* Из АПИ Привата - descriptionEvent */
+"ClaimerPhone":"+380660369907",								/* Из АПИ Привата - phoneClient */
+"InsuranceNumDoc": "CVX0HI-185C0QA", 						/* Из АПИ Привата - ref */
+"ClaimPerson":"Звинка Надія Іванівна",			    /* Из АПИ Привата - [fio]*/				
 "InjuredObjType":2, 	/*ВАЖНО!!!! NBR = 3, HI и SKM = 2*/
 
 "Department":6158,											/* (не меняется) Го-дбс-сп */

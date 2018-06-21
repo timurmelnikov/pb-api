@@ -29,18 +29,18 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{
     "opCode": "refuse",
     "request": {
-        "req_ID": "Z1856PB70000BX"
+        "req_ID": "Z1841PB700004G"
     },
     "actionLst": [
         {
             "ria_Type": "r",
-            "ria_Comment": "18.06.18 12:23 0964241151",
-	        "ria_DatE": "2018-06-18T00:00:00.000"
+            "ria_Comment": "20.06.2018, +380972832080",
+	        "ria_DatE": "2018-06-20T00:00:00.000"
         },
         {
             "ria_Type": "w",
-            "ria_Comment": "их. №  887828  від    18.06.2018  р.",
-	        "ria_DatE": "2018-06-18T00:00:00.000"
+            "ria_Comment": "19.06.2018, 4839",
+	        "ria_DatE": "2018-06-20T00:00:00.000"
         }
     ]
 }');
